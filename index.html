@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //24
+        function aleatorio(min, max) {
+            return Math.random() * (max - min) + min;            
+        }
+        console.log(aleatorio(5, 10))
+
+        /*25
+        let calidad=prompt("Diga la calidad del servicio")
+        function tipCalculator(calidad, numero) {
+            if (calidad==fatal) {
+                console.log("5% de propina")                
+            } else if (calidad==ok) {
+                console.log("15% de propina")               
+            } else if (calidad==bueno) {
+                console.log("20% de propina")
+            } else if (calidad==excelente) {
+                console.log("30% de propina")
+            } else {
+                console.log("18% de propina")
+            } 
+            
+        }
+
+        tipCalculator(calidad, 100)
+        */
+
+        //26
+        for (let i = 1; i <= 100 ; i++) {
+            if (i%3==0 && i%5==0){
+                console.log("Javascript")
+            } else if (i%3==0){
+                console.log("Java")
+            } else if (i%5==0) {
+                console.log("Script")
+            } else {
+                console.log(i)
+            }            
+        }
+
+
+
+     
+
+
+
+
+
+
+    </script>    
+</body>
+</html>
