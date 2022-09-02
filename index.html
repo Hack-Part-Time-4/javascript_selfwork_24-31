@@ -15,25 +15,21 @@
         }
         console.log(aleatorio(5, 10))
 
-        /*25
-        let calidad=prompt("Diga la calidad del servicio")
-        function tipCalculator(calidad, numero) {
-            if (calidad==fatal) {
-                console.log("5% de propina")                
-            } else if (calidad==ok) {
-                console.log("15% de propina")               
-            } else if (calidad==bueno) {
-                console.log("20% de propina")
-            } else if (calidad==excelente) {
-                console.log("30% de propina")
-            } else {
-                console.log("18% de propina")
-            } 
-            
+        //25
+        function tipCalculator(calidad, coste) {
+            if (calidad == "fatal") {
+                console.log(coste * 0.05)
+            } else if (calidad == "ok") { 
+                console.log(coste * 0.15)
+            } else if (calidad == "bueno") { 
+                console.log(coste * 0.20)
+            } else if (calidad == "excelente") { 
+                console.log(coste * 0.30)
+            } else { 
+                console.log(coste * 0.18)
+            }            
         }
-
-        tipCalculator(calidad, 100)
-        */
+        tipCalculator("fatal", 30)
 
         //26
         for (let i = 1; i <= 100 ; i++) {
@@ -48,14 +44,60 @@
             }            
         }
 
+        //27
+        function parimpar(numero) {
+            if (numero%2==0) {
+                console.log("El numero es par")                
+            } else {
+                console.log("El numero es impar")                
+            }            
+        }
+        parimpar(10)
 
+        //28
+        function intervalo(numero) {
+            if (numero <= 10) {
+                for (let i = 0; i <= numero; i++) {
+                if (i%2==0) continue;
+                console.log(i);        
+                }                   
+            } else {
+                for (let i = 0; i <= 10; i++) {
+                if (i%2==0) continue;
+                console.log(i);        
+                }                        
+            }                                         
+            }
+        intervalo(7)
 
-     
+        //29
+        function poligono(figura, length, width) {
+            if (figura=="rectangulo") {
+                let perimetro=(length+width)*2
+                console.log(`El perimetro del rectangulo es ${perimetro}`)               
+            } else {
+                let area=length*width
+                console.log(`El area del cuadrado es ${area}`)
+            }            
+        }
+        poligono("rectangulo", 5, 5)
 
+        //30
+        function area() {
+            for (let i = 1; i <= 10; i++) {
+                const pi = 3.141592;
+                let area=(i*i)*pi
+                console.log(`El area del circulo con radio ${i} es ${area}`)                
+            }            
+        }
+        area()
 
-
-
-
+        //31
+        function mayuscula(cadena) {
+            let texto=cadena.charAt(0).toUpperCase()+cadena.slice(1);
+            console.log(texto)
+        }
+        mayuscula("jeiny")
 
     </script>    
 </body>
