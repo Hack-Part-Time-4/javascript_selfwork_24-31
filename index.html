@@ -53,6 +53,7 @@
             }            
         }
         parimpar(10)
+        
 
         //28
         function intervalo(numero) {
@@ -69,6 +70,20 @@
             }                                         
             }
         intervalo(7)
+        
+            // 28 ---> OTRA SOLUCION ---> incremento de 2 ---> i+=2
+            // Utilizamos el incremento y asignación i+=2 para indicar que queremos incrementar en dos nuestro bucle. 
+            // i++ es igual a esta operación ---> i = i + 1 (incrementamos i en 1)
+            // De manera similar i+=2 es igual a esta operación ---> i = i + 2 (incrementamos i en 2)
+            // Así es como podemos saltarnos una interacción para ir de 0 a 10 excluyendo los números pares o lo que es lo mismo, imprimimos en consola el 1, saltamos el 2, imprimimos el 3, saltamos el 4, ...
+            // Código:
+                        function soloImpares(){
+                            for (let i = 0; i <= 10; i+=2){
+                                console.log(i)
+                            }
+                        }
+                        soloImpares()
+        
 
         //29
         function poligono(figura, length, width) {
@@ -81,6 +96,18 @@
             }            
         }
         poligono("rectangulo", 5, 5)
+        
+            // 29 ---> OTRA SOLUCION ---> dos parámetros
+            // Código:
+                        function areaOrPerimetro(l, w){
+                            if (l == w){
+                                return l * w
+                            } else {
+                                return (l + w) * 2
+                            }
+                        }
+                        areaOrPerimetro(4, 4) //se cumple la condicion
+                        areaOrPerimetro(4, 10) //no se cumple la condicion, se ejecuta else
 
         //30
         function area() {
@@ -91,6 +118,8 @@
             }            
         }
         area()
+        
+            //30 ---> OTRA SOLUCION ---> utilizando el métido Math.PI puedes llegar también a la solución 
 
         //31
         function mayuscula(cadena) {
